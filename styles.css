@@ -1,0 +1,174 @@
+
+/* css elements created mainly for intro shuffling animation */
+/* #safeContainer is hidden once intro shuffling animation has been completed */
+
+body {
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#safeContainer {
+	position: absolute;
+	width: 580px;
+  height: 177px;
+  animation: hideContainer 5s 1s linear forwards;
+}
+
+.safe {
+	position: relative;
+	width: 279px;
+	height: 279px;
+	background-image: url("images/box.png");
+	transform: scale(0.75);
+}
+
+#safe1 {
+	left: -55px;
+  top: -44px;
+  animation: safe1Animation 4s 1s linear forwards;
+}
+
+#safe2 {
+	left: 145px;
+  top: -323px;
+  animation: safe2Animation 4s linear forwards;
+}
+
+#safe3 {
+	left: 345px;
+  top: -602px;
+  animation: safe3Animation 4s linear forwards;
+}
+
+.door {
+	position: relative;
+	width: 202px;
+	height: 166px;
+	background-image: url("images/box_door.png");
+	left: 40px;
+  top: 43px;
+}
+
+.shadow {
+	position: relative;
+	width: 79px;
+	height: 95px;
+	background-image: url("images/box_padlock_shadow.png");
+	left: 94px;
+  top: -70px;
+}
+
+.lock {
+	position: relative;
+	width: 61px;
+	height: 81px;
+	background-image: url("images/box_padlock.png");
+	left: 113px;
+  top: -178px;
+}
+
+@keyframes safe1Animation {
+  0% {
+    -webkit-transform: translate(0, 0) scale(0.75);
+    -moz-transform: translate(0, 0) scale(0.75);
+    -ms-transform: translate(0, 0) scale(0.75);
+    transform: translate(0, 0) scale(0.75);
+  }
+  25% {
+    -webkit-transform: translate(200px, 0) scale(0.75);
+    -moz-transform: translate(200px, 0) scale(0.75);
+    -ms-transform: translate(200px, 0) scale(0.75);
+    transform: translate(200px, 0) scale(0.75);
+  }
+  50% {
+    -webkit-transform: translate(200px, 160px) scale(0.75);
+    -moz-transform: translate(200px, 160px) scale(0.75);
+    -ms-transform: translate(200px, 160px) scale(0.75);
+    transform: translate(200px, 160px) scale(0.75);
+  }
+  75% {
+    -webkit-transform: translate(400px, 160px) scale(0.75);
+    -moz-transform: translate(400px, 160px) scale(0.75);
+    -ms-transform: translate(400px, 160px) scale(0.75);
+    transform: translate(400px, 160px) scale(0.75);
+  }
+  100% {
+    -webkit-transform: translate(400px, 0) scale(0.75);
+    -moz-transform: translate(400px, 0) scale(0.75);
+    -ms-transform: translate(400px, 0) scale(0.75);
+    transform: translate(400px, 0) scale(0.75);
+  }
+}
+
+@keyframes safe2Animation {
+  0% {
+    -webkit-transform: translate(0, 0) scale(0.75);
+    -moz-transform: translate(0, 0) scale(0.75);
+    -ms-transform: translate(0, 0) scale(0.75);
+    transform: translate(0, 0) scale(0.75);
+  }
+  33% {
+    -webkit-transform: translate(0, 160px) scale(0.75);
+    -moz-transform: translate(0, 160px) scale(0.75);
+    -ms-transform: translate(0, 160px) scale(0.75);
+    transform: translate(0, 160px) scale(0.75);
+  }
+  66% {
+    -webkit-transform: translate(-200px, 160px) scale(0.75);
+    -moz-transform: translate(-200px, 160px) scale(0.75);
+    -ms-transform: translate(-200px, 160px) scale(0.75);
+    transform: translate(-200px, 160px) scale(0.75);
+  }
+  100% {
+    -webkit-transform: translate(-200px, 0) scale(0.75);
+    -moz-transform: translate(-200px, 0) scale(0.75);
+    -ms-transform: translate(-200px, 0) scale(0.75);
+    transform: translate(-200px, 0) scale(0.75);
+  }
+}
+
+@keyframes safe3Animation {
+  0% {
+    -webkit-transform: translate(0, 0) scale(0.75);
+    -moz-transform: translate(0, 0) scale(0.75);
+    -ms-transform: translate(0, 0) scale(0.75);
+    transform: translate(0, 0) scale(0.75);
+  }
+  33% {
+    -webkit-transform: translate(0, 160px) scale(0.75);
+    -moz-transform: translate(0, 160px) scale(0.75);
+    -ms-transform: translate(0, 160px) scale(0.75);
+    transform: translate(0, 160px) scale(0.75);
+  }
+  66% {
+    -webkit-transform: translate(0, 0) scale(0.75);
+    -moz-transform: translate(0, 0) scale(0.75);
+    -ms-transform: translate(0, 0) scale(0.75);
+    transform: translate(0, 0) scale(0.75);
+  }
+  100% {
+    -webkit-transform: translate(-200px, 0) scale(0.75);
+    -moz-transform: translate(-200px, 0) scale(0.75);
+    -ms-transform: translate(-200px, 0) scale(0.75);
+    transform: translate(-200px, 0) scale(0.75);
+  }
+}
+
+@keyframes hideContainer {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+
+
+
